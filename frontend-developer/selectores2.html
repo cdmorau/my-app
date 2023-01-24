@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Descendientes todos los hijos h2 de la clase hola*/
+        .hola h2{
+            background-color: aqua;
+        }
+        /* H1 que ijos directos de la classe .hola*/
+        .hola > h1{
+            background-color: burlywood;
+
+        }
+        /* todos los h3 que van justo despúes de un div */
+        div + h3{
+            background-color: yellowgreen;
+
+        }
+        /* Todos los hermanos, todos los h2 que están al mismo nivel que div */
+        div ~ h4{
+            color: palevioletred;
+        }
+
+
+    </style>
+
+
+
+
+</head>
+
+<body>
+    <div class="hola">
+        <h2>Soy hijo h2 aqua</h2>
+        <div>
+            <h2>Soy un nieto h2 aqua</h2>
+        </div>
+        <h1>Soy hijo h1 piel</h1>
+
+        <div>
+            <h1>Soy un nieto h1 sin color</h1>
+        </div>
+        <h3>Soy un h3 que debería ser verde</h3>
+        <h3>Soy un h3 que debería de estar blanco por no ser adyasente</h3>
+        <h4>Soy un h4 hermano</h4>
+
+
+    </div>
+    <h4>Soy un h4 hermano</h4>
+    <h4>Soy un h4 hermano</h4>
+    <div>
+        <h4>Soy un h4 hijo debería de estar en blanco</h4>
+    </div>
+    <h4>Soy un h4 hermano</h4>
+    
+        
+</body>
+</html>
